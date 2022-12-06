@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def no_c(string):
     string = string.split("c")
     string = "".join(string)
