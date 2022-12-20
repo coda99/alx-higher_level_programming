@@ -5,7 +5,7 @@ class Square:
     Simple class Square
     """
 
-    def __init__(self, size=None):
+    def __init__(self, size=0):
         self.__size = size
         try:
             if size < 0:
