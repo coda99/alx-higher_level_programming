@@ -8,7 +8,11 @@ class Square:
     Simple class Square
     """
 
-    def __init__(self, size=None):
+    def __init__(self, size=0):
+        """
+        class initializer
+        """
+
         self.__size = size
 
         try:
@@ -22,7 +26,7 @@ class Square:
         """
         size getter func
         """
-
+        
         return self.__size
 
     @size.setter
