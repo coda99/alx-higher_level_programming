@@ -20,6 +20,7 @@ class Square:
                 raise ValueError("size must be >= 0")
         except ValueError as e:
             print(e)
+            exit(0)
     
     @property
     def size(self):
@@ -43,8 +44,11 @@ class Square:
         """
 
         try:
-            if type(self.__size) == str:
+            if not isinstance(self.__size, int):
                 raise TypeError("size must be integer")
-            return self.__size ** 2
+        #    #return self.__size ** 2
         except TypeError as e:
             print(e)
+            exit(0)
+        else:
+            return self.__size ** 2
