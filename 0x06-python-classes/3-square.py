@@ -2,7 +2,6 @@
 
 """Defines Class Square"""
 
-
 class Square:
     """
     Simple class Square
