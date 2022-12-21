@@ -2,6 +2,7 @@
 
 """ Define Square """
 
+
 class Square:
 
     """
