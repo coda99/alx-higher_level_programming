@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 
+"""Class Definition"""
+
+
 class Square:
     """
     Simple class Square
@@ -16,13 +19,25 @@ class Square:
     
     @property
     def size(self):
+        """
+        size getter func
+        """
+
         return self.__size
 
     @size.setter
     def size(self, value):
+        """
+        size setter func
+        """
+
         self.__size = value
 
     def area(self):
+        """"
+        area calc func
+        """
+
         try:
             if type(self.__size) == str:
                 raise TypeError("size must be integer")
